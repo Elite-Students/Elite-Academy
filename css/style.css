@@ -1,0 +1,151 @@
+body{
+    background-color: whitesmoke;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+  }
+  .heading{
+    text-align: center;
+    margin-left: 5%;
+    padding-right: 15%;
+    font-family:cursive;
+    color:sandybrown;
+    font-size: 70px;
+  }
+  .header-div{
+  background-color:khaki;
+  padding: 35px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  }
+ ul#navbar {
+    display:inline;
+    align-items:center;
+    justify-content:center;
+}
+ul#navbar li {
+    display:inline;
+    padding: 35px;
+    font-size: 35px;
+}
+.nav-div{
+    background-color: navy;
+    height: 60px;
+    padding-top: 20px;
+    padding-left: 20%;
+}
+.img1{
+    width: 400px;
+    height: 400px;
+}
+.img2{
+    width: 400px;
+    height: 400px;
+}
+.img3{
+    width: 400px;
+    height: 400px;
+}
+img{
+    margin-left: 20px;
+  } 
+
+.sample-photo-div{
+    padding-top: 20px;
+    padding-left: 110px;
+  }
+
+.button-div{
+    text-align: center;
+    padding-top: 20px;
+}
+.showall-button{
+    width: 250px;
+    height: 40px;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-size: 15px;
+    background-color: green;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.hero-image{
+    width: 100px;
+    height: 100px;
+}
+.intro{
+  padding: 35px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.text{
+    padding-left: 20px;
+}
+ul#navbar li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.nav-div ul#navbar li a:hover{
+    background-color:gold;
+    color:black;
+    box-sizing: border-box;
+    transition: background-color .5s;
+}
+.showall-button:hover{
+    background-color: brown;
+}
+#footer{
+    background-color: khaki;
+    padding-bottom: 10px;
+}
+.copyText{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: sandybrown;
+    font-size: larger;
+    font-weight: bolder;
+}
+.info{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color:sandybrown;
+    font-size: larger;
+}
+.imgf{
+    width: 25x;
+    height: 25px;
+    margin: 0 0 0 10px;
+}
+.imgi{
+    width: 25px;
+    height: 25px;
+    margin: 0 0 0 10px;
+}
+.imgt{
+    width: 25px;
+    height: 25px;
+    margin: 0 0 0 10px;
+}
+
+.fp{
+    padding: 5px 10px 10px 10px;
+    margin: -74px 0 0 0;
+    text-align:right; 
+    position: relative;
+    float: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color:sandybrown;
+    font-size: 18px;
+}
+.follow-logos{
+    padding: 5px 10px 10px 10px;
+    margin: -40px 0 0 0;
+    text-align:right; 
+    position: relative;
+    float: right;
+    text-align:right; 
+}
