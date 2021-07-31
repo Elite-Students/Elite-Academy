@@ -46,3 +46,15 @@ Cart.prototype.removeCourse = function (item) {
 
 }
 //---------------------------------------------------------
+
+
+function corsesGenerat() {
+    new Course ('hi','https://thumbs.dreamstime.com/b/hi-sticker-retro-style-vector-illustration-isolated-white-background-hi-sticker-retro-style-134866280.jpg','12')
+    
+    new Course (
+        'marhaba','https://thumbs.dreamstime.com/b/hi-sticker-retro-style-vector-illustration-isolated-white-background-hi-sticker-retro-style-134866280.jpg','13'
+    )
+}
+
+corsesGenerat()
+console.log(Course.allCourses);
