@@ -35,12 +35,12 @@ Cart.prototype.savetoLocalStorage = function () {
 }
 //--------------------------------------------------------
 Cart.prototype.removeCourse = function (item) {
-  this.items.splice(item,1)
-        console.log('hi')
-        console.log(cart)
+    this.items.splice(item, 1)
+    console.log('hi')
+    console.log(cart)
 
 
-        // }
+    // }
     // }
 
 
@@ -49,11 +49,16 @@ Cart.prototype.removeCourse = function (item) {
 
 
 function corsesGenerat() {
-    new Course ('hi','https://thumbs.dreamstime.com/b/hi-sticker-retro-style-vector-illustration-isolated-white-background-hi-sticker-retro-style-134866280.jpg','12')
-    
-    new Course (
-        'marhaba','https://thumbs.dreamstime.com/b/hi-sticker-retro-style-vector-illustration-isolated-white-background-hi-sticker-retro-style-134866280.jpg','13'
-    )
+    new Course('PMP', 'img/pmp-cert.png', '150')
+    new Course('six segma', 'img/six-segma.jpg', '70')
+    new Course('ACP', 'img/pmi-acp.png', '13')
+    new Course('ITIL', 'img/itil.jpeg', '13')
+    new Course('COBIT', 'img/ISACA_COBIT.png', '13')
+    new Course('CEH', 'img/ceh.jpg', '13')
+    new Course('CCNA', 'img/ccna.jpg', '13')
+    new Course('Azure', 'img/azure.png', '13')
+    new Course('AWS', 'img/aws.png', '13')
+    new Course('CISM','img/cism.png','15' )
 }
 
 corsesGenerat()
