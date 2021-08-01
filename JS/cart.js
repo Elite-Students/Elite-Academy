@@ -1,27 +1,26 @@
 'use strict'
-let table = document.getElementById('cartTable')
-table.addEventListener('click', removetheCourse)
+
+let table = document.getElementById('cartTable');
+console.log(table);
+// table.addEventListener('click', removetheCourse);
 let cartItem;
-let savedItems = []
-
-
 //-----------------------------------------------
 
 // a function to load the cart by get the items from localstorage
 function loadCart() {
     let courseCart = JSON.parse(localStorage.getItem('cart') || []);
-    console.log(courseCart)
+    // console.log(courseCart)
     cartItem = new Cart(courseCart)
     console.log(cartItem, 'hi')
     if (courseCart !== null) {
 
         cartItem = courseCart
 
-    }
+    };
     console.log(cartItem.length)
     savedItems.push(cartItem)
-    console.log(savedItems)
-}
+    // console.log(savedItems)
+};
 
 
 //--------------------------------------------------------
@@ -29,8 +28,7 @@ function loadCart() {
 //a function to delete the cart courses row from te table
 function deleteRowforCourse() {
 
-
-}
+};
 
 //--------------------------------------------------------
 
@@ -58,45 +56,40 @@ function showtheCart() {
             dataElement3.width = '50'
             dataElement3.height = '30'
             dataElement4.textContent = (`${Course.allCourses[j].price} `)
-        }
-
-
-
-
-
-
-
-    }
+        };
+    };
   console.log(tBody)
-}
+};
 //----------------------------------------------------------
 
 // a function for the addlistener once we clicked on the table
 
 function removetheCourse(event) {
+    console.log(event);
     let selectedItem = event.target.textContent
     if (selectedItem === 'Remove') {
         cart.removeCourse(selectedItem);
-        cart.savetoLocalStorage()
-        showtheCart()
-    }
-}
+        cart.savetoLocalStorage();
+        
+    };
+};
+// showtheCart();
+
 //---------------------------------------------------------------
 
 // a function for clicking confirm button
-let confirmButton = document.getElementById('confirmButton')
-confirmButton.addEventListener('click', getConfirmation)
+let confirmButton = document.getElementById('confirmButton');
+confirmButton.addEventListener('click', getConfirmation);
 function getConfirmation() {
     alert(`Thanks for confirmation, our consults will contact you ASAP,check your email within two days`)
 
-}
+};
 //-----------------------------------------------------------------
-//---------------------------------------------------------------
 // a function to render table with buttons
 function renderTable() {
 
     loadCart();
     // deleteRowforCourse
     showtheCart();
-}
+};
 renderTable();
