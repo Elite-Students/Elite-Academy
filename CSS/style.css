@@ -2,6 +2,12 @@ body{
     background-color: whitesmoke;
 }
 .logo{
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 30%;
+    animation: bounce;
+    animation-duration: 2s;
+    float: inline-start;
     width: 70px;
     height: 70px;
   }
@@ -9,12 +15,16 @@ body{
     text-align: center;
     margin-left: 5%;
     padding-right: 15%;
+    float: left;
     font-family:cursive;
-    color:sandybrown;
+    animation: bounce;
+    animation-duration: 5s;
+    color:rgb(252, 38, 0);
     font-size: 70px;
   }
   .header-div{
-  background-color:khaki;
+
+  background-image: url(https://th.bing.com/th/id/R.4e09ab48e4ce3a779b999dab1b227e0f?rik=DlEr6S1sXEhJYw&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f23%2f64%2freATgs.jpg&ehk=sz1FBHQTH2z8Fd3YdqymKPiYstijlhEdX3Ef3EYoEGc%3d&risl=&pid=ImgRaw&r=0);
   padding: 35px;
   display:flex;
   align-items:center;
@@ -31,20 +41,31 @@ ul#navbar li {
     font-size: 35px;
 }
 .nav-div{
-    background-color: navy;
+    background: rgba(19, 30, 61, 0.678);
     height: 60px;
     padding-top: 20px;
     padding-left: 20%;
 }
+
+.pages-nav {
+    animation: zoomInRight;
+    animation-duration: 1s;
+}
 .img1{
+    animation: fadeInTopLeft;
+    animation-duration: 1s;
     width: 400px;
     height: 400px;
 }
 .img2{
+    animation: fadeInTopLeft;
+    animation-duration: 1s;
     width: 400px;
     height: 400px;
 }
 .img3{
+    animation: fadeInTopLeft;
+    animation-duration: 1s;
     width: 400px;
     height: 400px;
 }
@@ -62,6 +83,8 @@ img{
     padding-top: 20px;
 }
 .showall-button{
+    animation: heartBeat;
+    animation-duration: 40s;
     width: 250px;
     height: 40px;
     border-radius: 50px;
@@ -89,6 +112,7 @@ ul#navbar li a{
     color: whitesmoke;
 }
 .nav-div ul#navbar li a:hover{
+    
     background-color:gold;
     color:black;
     box-sizing: border-box;
@@ -98,20 +122,22 @@ ul#navbar li a{
     background-color: brown;
 }
 #footer{
-    background-color: khaki;
+    background-image: url(http://www.gvmarcenaria.com.br/site/wp-content/themes/options/images/skins/footers/full_width/footer-tealSkies.jpg);
     padding-bottom: 10px;
 }
 .copyText{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    color: sandybrown;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color:rgba(248, 233, 233, 0.555);
     font-size: larger;
     font-weight: bolder;
 }
 .info{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
-    color:sandybrown;
+    color:rgba(248, 233, 233, 0.555);
     font-size: larger;
 }
 .imgf{
@@ -138,7 +164,7 @@ ul#navbar li a{
     float: right;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
-    color:sandybrown;
+    color:rgba(248, 233, 233, 0.555);
     font-size: 18px;
 }
 .follow-logos{
