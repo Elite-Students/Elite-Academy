@@ -1,5 +1,5 @@
 'use strict'
-let cart=new Cart([])
+let cart=new Cart([]);
 let divElement=document.getElementsByClassName('courses')
 let imgElemant=document.getElementsByClassName('imgcourses');
 
@@ -21,17 +21,31 @@ for (let i = 0; i < buttons.length; i++) {
 function clicking(event){
 event.preventDefault ();
 }
-function addCourseToCart (event){
-    
-    let allCourses=document.getElementById('allCourses')
-    allCourses.setAttribute("name","div")
 
-cart.addcourse(event.target.select.value)
-console.log(allCourses,"hi")
-console.log (cart)
+
+function addCourseToCart (event){
+// event.preventDefault(); 
+let btn =event.target
+let shopItem = btn.parentElement.parentElement
+let allCourses=shopItem.getElementsByClassName('addCart')
+addItemToCat(addcart) 
+console.log(addcart);
+
+
+    
+//     allCourses.setAttribute("name","div")
+
+// cart.addcourse(event.target.select.value)
+// // console.log(allCourses,"hi")
+// console.log (event)
 
 
 }
+ 
+function addItemToCat(addcart) {
+
+    
+}
     
 
-addCourseToCart ()
+// addCourseToCart ()
