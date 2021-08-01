@@ -42,6 +42,7 @@ function updatecounter() {
     if (courseNumber) {
         localStorage.setItem('cartNumbers', courseNumber + 1)
 
+
         document.getElementsByClassName('cart span').textContent = courseNumber + 1;
         console.log(courseNumber)
     }
@@ -67,3 +68,4 @@ function onLoadCartNumber() {
 
 
 
+>>>>>>> ab9db0b5d0224bc4c23b163f7cf944dfa066ab7e
