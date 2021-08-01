@@ -22,7 +22,7 @@
                 <ul id="navbar">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="courses.html">Courses</a></li>
-                    <li><a href="cart.html">Cart</a></li>
+                    <li class="cart"><a href="carthtml">Cart<span>0</span></a></li>
                     <li><a href="apply.html">Apply for a job</a></li>
                 </ul>
             </nav>
@@ -58,6 +58,21 @@
 
             </fieldset>
         </form>
+        <div id="tablePosition">
+            <table id="cartTable">
+                <thead>
+                    <th></th>
+                    <th>Course Name</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+
+        </div>
+        <button id="confirmButton">Confirm</button>
     </main>
 
     <footer id="footer">
@@ -67,9 +82,9 @@
             <p>Location:Jordan-Amman-Airport Road-buuilding no.12</p>
             <p>Telephone:05644477896</p>
         </div>
-        
+
         <p class="fp">Follow Us On:</p>
-    
+
         <div class="follow-logos">
             <a href="https://www.facebook.com/Elite-Academy-131615905732887"><img class="imgf"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png"
@@ -85,6 +100,9 @@
 
         </div>
     </footer>
+    <script src="JS/app.js"></script>
+    <script src="JS/courses.js"></script>
+    <script src="JS/cart.js"></script>
 </body>
 
 </html>
