@@ -85,11 +85,14 @@ Course.prototype.render = function () {
 
     function tab(event) {
         event.preventDefault();
-
-        savedItems.push(titel.textContent, newImg.src,thePrice.textContent);
+// savedItems.push([this])
+        let newCourse =new Course(titel.textContent, newImg.src,thePrice.textContent);
+        savedItems.push(newCourse);
 
         console.log(savedItems);
         localStorage.setItem('savedItems', JSON.stringify(savedItems))
+        updatecounter();
+        onLoadCartNumber();
     };
 };
 

@@ -5,17 +5,11 @@ let spanElement = document.getElementsByClassName('coursesTitle');
 let imgElemant = document.getElementsByClassName('imgcourses');
 
 
-
-// render prototype method
-
-
-
 function clicking(event) {
     event.preventDefault();
     addCourseToCart(event);
     cart.savetoLocalStorage();
-    updatecounter();
-    onLoadCartNumber();
+    
 
 };
 
