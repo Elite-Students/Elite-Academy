@@ -4,6 +4,12 @@ const cart = new Cart([])
 let spanElement = document.getElementsByClassName('coursesTitle');
 let imgElemant = document.getElementsByClassName('imgcourses');
 
+
+
+// render prototype method
+
+
+
 function clicking(event) {
     event.preventDefault();
     addCourseToCart(event);
@@ -53,4 +59,3 @@ function onLoadCartNumber() {
 };
 
 
->>>>>>> ab9db0b5d0224bc4c23b163f7cf944dfa066ab7e
