@@ -3,13 +3,17 @@ const cart = new Cart([])
 let spanElement = document.getElementsByClassName('coursesTitle')
 let imgElemant = document.getElementsByClassName('imgcourses');
 
-for (let i = 0; i < Course.allCourses.length; i++) {
-    imgElemant[i].src = Course.allCourses[i].source
-    let h2Element = document.createElement('h2');
-    spanElement[i].appendChild(h2Element)
-    h2Element.textContent = (`${Course.allCourses[i].name}`)
+// for (let i = 0; i < Course.allCourses.length; i++) {
+//     imgElemant[i].src = Course.allCourses[i].source
+//     let h2Element = document.createElement('h2');
+//     spanElement[i].appendChild(h2Element)
+//     h2Element.textContent = (`${Course.allCourses[i].name}`)
 
-}
+// }
+
+// render prototype method
+
+
 
 
 let buttons = document.getElementsByClassName('addCart')
