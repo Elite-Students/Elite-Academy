@@ -2,7 +2,7 @@
 let cart=new Cart([])
 let divElement=document.getElementsByClassName('courses')
 let imgElemant=document.getElementsByClassName('imgcourses');
-
+console.log(divElement);
 for (let i=0;i<Course.allCourses.length;i++){
     imgElemant[i].src=Course.allCourses[i].source
     let h2Element=document.createElement('h2');
@@ -12,26 +12,41 @@ for (let i=0;i<Course.allCourses.length;i++){
 }
 
     
-let buttons=document.getElementsByClassName('addCart')
-for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click',clicking)
+let addToCart=document.getElementsByClassName('addCart')
+for (let i = 0; i < addToCart.length; i++) {
+    addToCart[i].addEventListener('click',clicking)
 
 }
 
 function clicking(event){
 event.preventDefault ();
+addCourseToCart()
+
+
 }
+
+
+
 function addCourseToCart (event){
-    
-    let allCourses=document.getElementById('allCourses')
-    allCourses.setAttribute("name","div")
+console.log(event.target);
+    // let  btn=event.target
+    //  console.log(btn);
+    // let courseItem=btn.parentElement
+    // let title=courseItem.getElementByTagName('h2')[0].value
 
-cart.addcourse(event.target.select.value)
-console.log(allCourses,"hi")
-console.log (cart)
-
+    // console.log(title);
+//     let anything=[];
 
 }
+//     let allCourses=document.getElementById('allCourses')
+//     allCourses.setAttribute("name","div")
+
+// cart.addcourse(event.target.select.value)
+// console.log(allCourses,"hi")
+// console.log (cart)
+
+
+
     
 
-addCourseToCart ()
+// addCourseToCart ()
