@@ -27,10 +27,11 @@ function craetProfile(event) {
     console.log(imgPart,namePart,experiencePart,skillsPart);
 
     let profileJob=new Profile(imgPart,namePart,experiencePart,skillsPart)
-    profilesArr.push(profileJob)
+    // profilesArr.push(profileJob)
   console.log(profileJob);
-  theprofile()
+  // theprofile()
   saveTeProfile()
+  profileJob.renderProfile ()
 
 }
 
@@ -43,39 +44,45 @@ function loadProfile() {
 
     if (parsedArr!==null) {
 
-        Profile.all=parsedArr
-    }
+for (let i = 0; i < parsedArr.length; i++) {
+  new Profile (parsedArr[i].source,parsedArr[i].theName,parsedArr[i].experince,parsedArr[i].skills)
 
-    console.log(parsedArr);
+  
+}    }
+
+    console.log(profileLoad);
 }
 
 let profilesArr=[];
 console.log(profilesArr);
 
-function theprofile() {
-    
+// render . prototype 
 
-for (let i = 0; i < profilesArr.length; i++) {
+Profile.prototype.renderProfile= function (){
+
+
+
+// for (let i = 0; i < Profile.all.length; i++) {
 let imgElemnt=document.createElement('img')
 
 divProfiles.appendChild(imgElemnt)
-imgElemnt.src =` ${ Profile.all[0].source}`
+imgElemnt.src =` ${ this.source}`
 
     let ulEleent=document.createElement('ul');
     divProfiles.appendChild(ulEleent);
 
   let li1Element= document.createElement('li')
   ulEleent.appendChild(li1Element)
-  li1Element.textContent=`your name is  ${ Profile.all[i].theName} `;
+  li1Element.textContent=`your name is  ${ this.theName} `;
   let li2Element= document.createElement('li')
   ulEleent.appendChild(li2Element)
-  li2Element.textContent=`the experince per year  ${Profile.all[i].experince} `;
+  li2Element.textContent=`the experince per year  ${this.experince} `;
   let li3Element= document.createElement('li')
   ulEleent.appendChild(li3Element)
-  li3Element.textContent=`the skills ${Profile.all[i].skills} `;
+  li3Element.textContent=`the skills ${this.skills} `;
     
 }
-}
+// }
 
 // Profile.prototype.saveTeProfile=function () {
 //     localStorage.setItem('profile',JSON.stringify(Profile.all))
@@ -91,3 +98,8 @@ function saveTeProfile() {
 
 
   loadProfile()
+
+
+  for (let i = 0; i < Profile.all.length; i++) {
+Profile.all[i].renderProfile()
+  }
