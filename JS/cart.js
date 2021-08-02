@@ -9,9 +9,7 @@ let cartItem;
 // a function to load the cart by get the items from localstorage
 function loadCart() {
     let courseCart = JSON.parse(localStorage.getItem('savedItems') || []);
-    // console.log(courseCart)
     cartItem = new Cart(courseCart)
-    console.log(cartItem, 'hi')
     if (courseCart !== null) {
         cartItem = courseCart
 
@@ -19,11 +17,11 @@ function loadCart() {
     console.log(cartItem)
 };
 
-loadCart()
+// loadCart()
 //--------------------------------------------------------
 
 //a function to delete the cart courses row from te table
-// function removetheCourse() {
+// function removetheItems(event) {
 // let buttons=document.getElementsByTagName('button').value
 // console.log(buttons)
 // for (let index = 0; index < cartItem.length; index++) {
@@ -42,7 +40,6 @@ loadCart()
 // };
 
 //--------------------------------------------------------
-console.log(cartItem)
 // a function to show the cart again
 function showtheCart() {
 
@@ -51,14 +48,12 @@ function showtheCart() {
     for (let i = 0; i < cartItem.length; i++) {
         let tableRowElement = document.createElement('tr')
         tBody.appendChild(tableRowElement);
-        //     console.log(tableRowElement)
-
         let dataElement3 = document.createElement('img')
         tableRowElement.appendChild(dataElement3)
         dataElement3.src = `${cartItem[i].source} `
         dataElement3.width = '50'
         dataElement3.height = '30'
-        let h2Element = document.createElement('h2')
+        let h2Element=document.createElement('td')
         tableRowElement.appendChild(h2Element)
         h2Element.textContent=`${cartItem[i].name}`
         let dataElement4 = document.createElement('td')
@@ -77,16 +72,13 @@ function showtheCart() {
 
 // a function for the addlistener once we clicked on the table
 
-// function removetheCourse(event) {
-//     console.log(event);
-//     let selectedItem = event.target.textContent
-//     if (selectedItem === 'Remove') {
-//         cart.removeCourse(selectedItem);
-//         cart.savetoLocalStorage();
+function removetheCourse(event) {
 
-//     };
-// };
-showtheCart();
+    let buttonclicked = event.target
+    buttonclicked.parentElement.remove()
+   
+};
+// showtheCart();
 
 //---------------------------------------------------------------
 
@@ -99,10 +91,19 @@ showtheCart();
 // };
 //-----------------------------------------------------------------
 // a function to render table with buttons
-// function renderTable() {
+function renderTable() {
 
-//     loadCart();
-//     // deleteRowforCourse
-//     showtheCart();
-// };
-// renderTable();
+    loadCart();
+    removetheCourse
+    showtheCart();
+};
+renderTable();
+
+
+// function removetheCoursefromtheCart(event) {
+//     let btn=event.target
+    
+ 
+// console.log('hi')
+    
+// }
