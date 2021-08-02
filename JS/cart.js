@@ -59,3 +59,11 @@ function removetheCourse(event) {
 };
 showtheCart();
 //---------------------------------------------------------------
+ // an alert fot conifirmation button 
+
+let confButton=document.getElementById('confirmButton')
+confButton.addEventListener('click',alertButton)
+function alertButton(params) {
+    alert(`Thank you for registration, our consulting team will contact you` )
+    
+};
