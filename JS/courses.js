@@ -1,25 +1,7 @@
 'use strict'
 
 const cart = new Cart([])
-// let spanElement = document.getElementsByClassName('coursesTitle');
-// let imgElemant = document.getElementsByClassName('imgcourses');
 
-
-// function clicking(event) {
-//     event.preventDefault();
-//     addCourseToCart(event);
-//     cart.savetoLocalStorage();
-
-
-// };
-
-// function addCourseToCart(event) {
-//     let button = event.target
-//     let courses = button.parentElement
-//     let title = courses.getElementsByClassName('coursesTitle')[0].innerText
-//     cart.addcourse(title)
-//     console.log(cart)
-// };
 
 let savedItems = [];
 Course.prototype.render = function () {
@@ -50,55 +32,46 @@ Course.prototype.render = function () {
 
     function tab(event) {
         event.preventDefault();
+    
         let newCourse = new Course(titel.textContent, newImg.src, thePrice.textContent);
         savedItems.push(newCourse);
-
+    
         console.log(savedItems);
-        localStorage.setItem('savedItems', JSON.stringify(savedItems))
+        let storingitems = JSON.stringify(savedItems)
+        localStorage.setItem('savedItems', storingitems)
         updatecounter();
-        // onLoadCartNumber();
+        // // onLoadCartNumber();
         newBtn.removeEventListener('click', tab)
     };
+}
 
-};
+
+
+
 
 for (let i = 0; i < Course.allCourses.length; i++) {
     console.log(Course.allCourses[i])
     Course.allCourses[i].render();
 
 };
-
+let theli = document.getElementById('cart');
+let spanElement = document.createElement('span')
+theli.appendChild(spanElement)
 function updatecounter() {
-    let courseNumber = localStorage.getItem('cartNumbers')
-    courseNumber = parseInt(courseNumber)
-    if (courseNumber !== null) {
+    let savednumber = localStorage.getItem('savedItems')
 
-        if (courseNumber) {
-            localStorage.setItem('cartNumbers', courseNumber + 1)
-            document.getElementById('cart').textContent = courseNumber + 1;
-            console.log(courseNumber)
-        }
-        else {
-            localStorage.setItem('cartNumbers', 1)
-            document.getElementById('cart').textContent = 1
 
-            console.log(courseNumber)
 
-        };
+    if (savednumber !== null) {
+        savedItems = JSON.parse(savednumber)
+
+        spanElement.textContent = savedItems.length
+
+
+
+
     };
 };
 
-
-// function onLoadCartNumber() {
-//     let courseNumber = localStorage.getItem('cartNumbers')
-//     courseNumber = parseInt(courseNumber)
-//     if (courseNumber!==null){
-//         document.getElementById('cart').textContent = courseNumber
-//         console.log(document.getElementById('cart').textContent)
-
- 
-//     };
-
-// };
-
+updatecounter()
 
