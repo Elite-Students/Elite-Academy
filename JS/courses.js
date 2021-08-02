@@ -65,7 +65,6 @@ Course.prototype.render = function () {
 for (let i = 0; i < Course.allCourses.length; i++) {
     console.log(Course.allCourses[i])
     Course.allCourses[i].render();
-
 };
 
 function updatecounter() {
