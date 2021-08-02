@@ -14,37 +14,17 @@ function loadCart() {
         cartItem = courseCart
 
     };
-    console.log(cartItem)
 };
 
-// loadCart()
-//--------------------------------------------------------
-
-//a function to delete the cart courses row from te table
-// function removetheItems(event) {
-// let buttons=document.getElementsByTagName('button').value
-// console.log(buttons)
-// for (let index = 0; index < cartItem.length; index++) {
-//     buttons.addEventListener('click',toDo)
-//     function toDo(event){
-//         let btn=event.target
-//         let value=btn.textContent
-//         if(value==='Remove'){
-
-//             tableCart.deleteRow(i)
-//         }
-    
-//     } 
-// }
-
-// };
+loadCart();
 
 //--------------------------------------------------------
 // a function to show the cart again
-function showtheCart() {
 
+function showtheCart() {
     let tBody = document.createElement('tbody')
     tableCart.appendChild(tBody);
+
     for (let i = 0; i < cartItem.length; i++) {
         let tableRowElement = document.createElement('tr')
         tBody.appendChild(tableRowElement);
@@ -53,19 +33,16 @@ function showtheCart() {
         dataElement3.src = `${cartItem[i].source} `
         dataElement3.width = '50'
         dataElement3.height = '30'
-        let h2Element=document.createElement('td')
+        let h2Element = document.createElement('td')
         tableRowElement.appendChild(h2Element)
-        h2Element.textContent=`${cartItem[i].name}`
+        h2Element.textContent = `${cartItem[i].name}`
         let dataElement4 = document.createElement('td')
         tableRowElement.appendChild(dataElement4)
         dataElement4.textContent = `${cartItem[i].price} `
         let removeButton = document.createElement('button')
         tableRowElement.appendChild(removeButton)
         removeButton.textContent = (`Remove`)
-
     };
-
-
 };
 
 //----------------------------------------------------------
@@ -76,34 +53,17 @@ function removetheCourse(event) {
 
     let buttonclicked = event.target
     buttonclicked.parentElement.remove()
-   
+    let removed= cartItem.splice(buttonclicked,1)
+    console.log(removed)
+    localStorage.setItem('savedItems', JSON.stringify(cartItem));
 };
-// showtheCart();
-
+showtheCart();
 //---------------------------------------------------------------
+ // an alert fot conifirmation button 
 
-// a function for clicking confirm button
-// let confirmButton = document.getElementById('confirmButton');
-// confirmButton.addEventListener('click', getConfirmation);
-// function getConfirmation() {
-//     alert(`Thanks for confirmation, our consults will contact you ASAP,check your email within two days`)
-
-// };
-//-----------------------------------------------------------------
-// a function to render table with buttons
-function renderTable() {
-
-    loadCart();
-    removetheCourse
-    showtheCart();
+let confButton=document.getElementById('confirmButton')
+confButton.addEventListener('click',alertButton)
+function alertButton(params) {
+    alert(`Thank you for registration, our consulting team will contact you` )
+    
 };
-renderTable();
-
-
-// function removetheCoursefromtheCart(event) {
-//     let btn=event.target
-    
- 
-// console.log('hi')
-    
-// }

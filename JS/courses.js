@@ -1,6 +1,6 @@
 'use strict'
 
-const cart = new Cart([])
+const cart = new Cart([]);
 
 
 let savedItems = [];
@@ -31,22 +31,17 @@ Course.prototype.render = function () {
     newBtn.addEventListener('click', tab);
 
     function tab(event) {
+
         event.preventDefault();
-    
         let newCourse = new Course(titel.textContent, newImg.src, thePrice.textContent);
         savedItems.push(newCourse);
-    
-        console.log(savedItems);
         let storingitems = JSON.stringify(savedItems)
         localStorage.setItem('savedItems', storingitems)
         updatecounter();
-        // // onLoadCartNumber();
         newBtn.removeEventListener('click', tab)
+
     };
-}
-
-
-
+};
 
 
 for (let i = 0; i < Course.allCourses.length; i++) {
@@ -54,22 +49,16 @@ for (let i = 0; i < Course.allCourses.length; i++) {
     Course.allCourses[i].render();
 
 };
+
+
 let theli = document.getElementById('cart');
 let spanElement = document.createElement('span')
 theli.appendChild(spanElement)
 function updatecounter() {
     let savednumber = localStorage.getItem('savedItems')
-
-
-
     if (savednumber !== null) {
         savedItems = JSON.parse(savednumber)
-
         spanElement.textContent = savedItems.length
-
-
-
-
     };
 };
 
