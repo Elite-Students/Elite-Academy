@@ -7,18 +7,18 @@ function Course(name, src, price) {
     this.source = src;
     this.price = price;
     Course.allCourses.push(this)
-}
+};
 
 //-------------------------------------------------------
 // constructor function for the cart 
 function Cart(item) {
     this.items = item;
-}
+};
 //-------------------------------------------------------
 // constructor function for the cartItems
 function CartCourse(course) {
     this.course = course;
-}
+};
 
 //------------------------------------------------------------
 
@@ -28,25 +28,18 @@ function CartCourse(course) {
 Cart.prototype.addcourse = function (course) {
     let newCourse = new CartCourse(course);
     this.items.push(newCourse);
-}
+};
 //------------------------------------------------------------
 Cart.prototype.savetoLocalStorage = function () {
     localStorage.setItem('cart', JSON.stringify(this.items));
-}
+};
 //--------------------------------------------------------
 Cart.prototype.removeCourse = function (item) {
     this.items.splice(item, 1)
-    console.log('hi')
-    console.log(cart)
-
-
-    // }
-    // }
-
-
-}
+    // console.log('hi');
+    // console.log(cart);
+};
 //---------------------------------------------------------
-
 
 function corsesGenerat() {
     new Course('PMP', 'img/pmp-cert.png', '150')
@@ -58,8 +51,8 @@ function corsesGenerat() {
     new Course('CCNA', 'img/ccna.jpg', '13')
     new Course('Azure', 'img/azure.png', '13')
     new Course('AWS', 'img/aws.png', '13')
-    new Course('CISM','img/cism.png','15' )
-}
+    new Course('CISM', 'img/cism.png', '15')
+};
 
 corsesGenerat()
-console.log(Course.allCourses);
+
