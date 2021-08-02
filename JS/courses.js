@@ -56,7 +56,7 @@ Course.prototype.render = function () {
         console.log(savedItems);
         localStorage.setItem('savedItems', JSON.stringify(savedItems))
         updatecounter();
-        // onLoadCartNumber();
+        onLoadCartNumber();
         newBtn.removeEventListener('click', tab)
     };
 
@@ -89,16 +89,16 @@ function updatecounter() {
 };
 
 
-// function onLoadCartNumber() {
-//     let courseNumber = localStorage.getItem('cartNumbers')
-//     courseNumber = parseInt(courseNumber)
-//     if (courseNumber!==null){
-//         document.getElementById('cart').textContent = courseNumber
-//         console.log(document.getElementById('cart').textContent)
+function onLoadCartNumber() {
+    let courseNumber = localStorage.getItem('cartNumbers')
+    courseNumber = parseInt(courseNumber)
+    if (courseNumber !== null) {
+        document.getElementById('cart').textContent = courseNumber
+        console.log(document.getElementById('cart').textContent)
 
- 
-//     };
 
-// };
+    };
+
+};
 
 

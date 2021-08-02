@@ -33,7 +33,7 @@ function loadCart() {
 
 //             tableCart.deleteRow(i)
 //         }
-    
+
 //     } 
 // }
 
@@ -53,9 +53,9 @@ function showtheCart() {
         dataElement3.src = `${cartItem[i].source} `
         dataElement3.width = '50'
         dataElement3.height = '30'
-        let h2Element=document.createElement('td')
+        let h2Element = document.createElement('td')
         tableRowElement.appendChild(h2Element)
-        h2Element.textContent=`${cartItem[i].name}`
+        h2Element.textContent = `${cartItem[i].name}`
         let dataElement4 = document.createElement('td')
         tableRowElement.appendChild(dataElement4)
         dataElement4.textContent = `${cartItem[i].price} `
@@ -74,10 +74,20 @@ function showtheCart() {
 
 function removetheCourse(event) {
 
-    let buttonclicked = event.target
-    buttonclicked.parentElement.remove()
-   
-};
+    let buttonclicked = event.target;
+    buttonclicked.parentElement.remove();
+    // console.log(buttonclicked);
+//     let item = event.target.id;
+//     cartItem.removeItem(item);
+//     renderTable();
+// };
+
+// function removeItemFromCart(event) {
+
+//   let item =event.target.id;
+//   cartItem.removeItem(item);
+//   renderTable();
+//   };
 // showtheCart();
 
 //---------------------------------------------------------------
@@ -94,16 +104,17 @@ function removetheCourse(event) {
 function renderTable() {
 
     loadCart();
-    removetheCourse
+    removetheCourse();
     showtheCart();
 };
+
 renderTable();
 
 
 // function removetheCoursefromtheCart(event) {
 //     let btn=event.target
-    
- 
+
+
 // console.log('hi')
-    
-// }
+
+}
