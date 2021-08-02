@@ -50,14 +50,16 @@ Course.prototype.render = function () {
 
     function tab(event) {
         event.preventDefault();
+      
+
         let newCourse = new Course(titel.textContent, newImg.src, thePrice.textContent);
         savedItems.push(newCourse);
 
         console.log(savedItems);
         localStorage.setItem('savedItems', JSON.stringify(savedItems))
         updatecounter();
+        
         // onLoadCartNumber();
-        newBtn.removeEventListener('click', tab)
     };
 
 };
@@ -89,6 +91,16 @@ function updatecounter() {
 };
 
 
+
+let lastItems=JSON.parse(localStorage.getItem('savedItems') || []);
+console.log(lastItems);
+savedItems=lastItems;
+console.log(lastItems)
+
+// get the data for the saved items and make it equal to savedItems
+
+updatecounter();
+
 // function onLoadCartNumber() {
 //     let courseNumber = localStorage.getItem('cartNumbers')
 //     courseNumber = parseInt(courseNumber)
@@ -96,7 +108,7 @@ function updatecounter() {
 //         document.getElementById('cart').textContent = courseNumber
 //         console.log(document.getElementById('cart').textContent)
 
- 
+
 //     };
 
 // };
