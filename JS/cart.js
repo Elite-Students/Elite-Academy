@@ -67,3 +67,4 @@ function alertButton(params) {
     alert(`Thank you for registration, our consulting team will contact you` )
     
 };
+
