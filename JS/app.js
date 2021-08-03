@@ -55,5 +55,31 @@ function corsesGenerat() {
 };
 
 corsesGenerat()
+//-------------------------------------------------------------------------
+// to check if there is items in the local storage :
 
+
+let savedItems = [];
+let savedItemsInLocalStorage = localStorage.getItem('savedItems');
+if (savedItemsInLocalStorage) {
+    savedItems = JSON.parse(savedItemsInLocalStorage);
+}
+
+// to add the conteners in the span nav :
+
+let theliElement = document.getElementById('cart');
+let spanElement = document.createElement('span');
+spanElement.setAttribute("id", "batata")
+theliElement.appendChild(spanElement)
+
+// update the counter :
+function updatecounter() {
+    let savednumber = localStorage.getItem('savedItems')
+    if (savednumber !== null) {
+        savedItems = JSON.parse(savednumber)
+        spanElement.textContent = savedItems.length
+    };
+};
+
+updatecounter()
 
