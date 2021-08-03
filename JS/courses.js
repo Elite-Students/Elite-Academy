@@ -38,31 +38,17 @@ Course.prototype.render = function () {
             localStorage.setItem('savedItems', storingitems)
             updatecounter();
         }
-        // updateCoursesStatus();
     };
 
     function checkIfCourseIsAdded(courseName) {
-        for (let index = 0; index < savedItems.length; index++) {
-            const savedCourse = savedItems[index];
+        for (let i = 0; i < savedItems.length; i++) {
+            let savedCourse = savedItems[i];
             if(courseName === savedCourse.name)
                 return true;
         }
         return false;
     }
 };
-//     function updateCoursesStatus() {
-//         let allCourses = document.getElementById("allCourses").children;
-//         for (let index = 0; index < allCourses.length; index++) {
-//             const courseName = allCourses[index].getElementsByTagName("h2")[0].textContent;
-//             if(checkIfCourseIsAdded(courseName)){
-//                 allCourses[index].getElementsByTagName("button")[0].disabled = true;
-//             }
-//         }
-//     }
-
-//     updateCoursesStatus();
-// };
-
 
 for (let i = 0; i < Course.allCourses.length; i++) {
     Course.allCourses[i].render();
