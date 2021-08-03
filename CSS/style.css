@@ -11,7 +11,7 @@ body{
     width: 70px;
     height: 70px;
   }
-  .heading{
+   .heading{
     text-align: center;
     margin-left: 5%;
     padding-right: 15%;
@@ -22,7 +22,7 @@ body{
     color:rgb(252, 38, 0);
     font-size: 70px;
   }
-  .header-div{
+  /* .header-div{
 
   background-image: url(https://th.bing.com/th/id/R.4e09ab48e4ce3a779b999dab1b227e0f?rik=DlEr6S1sXEhJYw&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f23%2f64%2freATgs.jpg&ehk=sz1FBHQTH2z8Fd3YdqymKPiYstijlhEdX3Ef3EYoEGc%3d&risl=&pid=ImgRaw&r=0);
   padding: 35px;
@@ -174,4 +174,4 @@ ul#navbar li a{
     position: relative;
     float: right;
     text-align:right; 
-}
+}  */
