@@ -56,6 +56,7 @@ function removetheCourse(event) {
     let removed= cartItem.splice(buttonclicked,1)
     console.log(removed)
     localStorage.setItem('savedItems', JSON.stringify(cartItem));
+
 };
 showtheCart();
 //---------------------------------------------------------------
@@ -65,5 +66,7 @@ let confButton=document.getElementById('confirmButton')
 confButton.addEventListener('click',alertButton)
 function alertButton(params) {
     alert(`Thank you for registration, our consulting team will contact you` )
+    tableCart.remove()
     
+    localStorage.removeItem('savedItems')
 };
