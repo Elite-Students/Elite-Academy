@@ -49,8 +49,10 @@ function showtheCart() {
 // a function for the addlistener once we clicked on the table
 
 function removetheCourse(event) {
+
     let buttonclicked = event.target
     buttonclicked.parentElement.remove()
+    
     let removed= cartItem.splice(buttonclicked,1)
     console.log(removed)
     localStorage.setItem('savedItems', JSON.stringify(cartItem));
