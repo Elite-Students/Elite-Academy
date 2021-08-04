@@ -1,11 +1,14 @@
 main{
-    margin: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
     background-color: rgb(143, 182, 202);
+    margin-bottom: 0;
 }
 
 
 
-h3{
+ h3{
     font-size: 50px;
     color: rgb(238, 238, 238);
     padding: 1%;
@@ -14,7 +17,7 @@ h3{
 }
 
 p{
-    font-size: 20px;
-    padding: 2%;
+    font-size: 20px; 
+     padding: 2%;
     color: #334257;
-}
+} 

@@ -1,4 +1,6 @@
 // ahmad part 
+
+
 let form = document.getElementById("Apply-Form")
 form.addEventListener('submit', craetProfile)
 
@@ -42,9 +44,14 @@ function craetProfile(event) {
   saveTeProfile()
   profileJob.renderProfile()
 
-  alert(" Thank you for your interest , Our consulting team will contact you as soon as possible.")
- 
+
   
+  Swal.fire(
+    'thanks for your intrest',
+    'Our consulting team will contact you soon',
+    'success'
+  )
+ 
 }
 
 // ahmad part 
