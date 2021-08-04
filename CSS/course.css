@@ -15,13 +15,11 @@ main{
 }
 
 #imgDiv .imeges {
-
     width: 100%;
     height: 100%;
 }
 
 #imgDiv .addToCart{
-    
     border: none;
     outline: 0;
     padding: 12px;
@@ -37,28 +35,26 @@ main{
 }
 #imgDiv {
     position: relative;
-    width: 15%;
+    width: 19%;
     display: inline-table;
     text-align: center;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 50%;
     margin: auto;
-   
-    position: relative;
     margin-bottom: 5%;
-    margin-right: 5%;
+    margin-right: 9%;
     margin-left: 5% ;
+    background-color: white;
 } 
 
-#imgDiv:nth-child(9) {
-    margin-right: 5%;
-    margin-left: 30%;
-  }
+ #imgDiv:nth-child(10) {
+    margin-left: 38%;
+  } 
 
   #showall-button{
    
     padding: 12px;
-    margin-left: 45%;
+    margin-left: 42%;
     background-color: #334257;
     color: #EEEEEE;
     font-size: 170%;
@@ -76,5 +72,5 @@ main{
 
 
   }
-  
+
   
