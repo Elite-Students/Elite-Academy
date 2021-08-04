@@ -1,23 +1,20 @@
-main{
+#mainAbout {
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 2%;
-    background-color: rgb(143, 182, 202);
+    background-color: #334257;
     margin-bottom: 0;
 }
 
-
-
- h3{
+#h3About {
     font-size: 50px;
-    color: rgb(238, 238, 238);
+    color: #EEEEEE;
     padding: 1%;
     margin-bottom: 1%;
-
 }
 
-p{
-    font-size: 20px; 
-     padding: 2%;
-    color: #334257;
-} 
+#pAbout {
+    font-size: 20px;
+    padding: 2%;
+    color: #EEEEEE;
+}
