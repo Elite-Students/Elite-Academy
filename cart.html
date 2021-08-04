@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/cart.css">
 </head>
 
 <body>
     <header>
-        <div class="header-div">
+        <!-- <div class="header-div">
             <img class="logo"
                 src="https://cdn3.vectorstock.com/i/thumb-large/81/82/computer-courses-logo-sign-symbol-icon-vector-26128182.jpg"
                 alt="">
@@ -26,25 +27,39 @@
                     <li><a href="apply.html">Apply for a job</a></li>
                 </ul>
             </nav>
-        </div>
+        </div> -->
     </header>
     <main>
-        <div>
+
+        <div id="title">
+
+            <h2>The Cart-List</h2>
+            <img
+                src="https://icon-library.com/images/shopping-cart-icon-free/shopping-cart-icon-free-9.jpg">
+            <div>
+                <p>p</p>
+            </div>
+        </div>
+        <span class="fa-solid fa-cart-plus">
+        
+        </span> 
+         
+
+        <!-- <div id="allStiuff"> -->
+
+
+        <div id="formStyle">
+            <h3>Your Information</h3>
             <form id="submit-form">
                 <fieldset>
-                    <label for="Full-Name">Full Name:</label>
+                    <label class="labels" for="Full-Name">Full Name:</label>
                     <input type="text" name="Full-Name" id="Full-Name" required placeholder="Enter your full name">
 
-                    <br>
-                    <br>
 
-                    <label for="Email">Email:</label>
+                    <label class="labels" for="Email">Email:</label>
                     <input type="text" name="Email" id="Email" required placeholder="Enter your email">
 
-                    <br>
-                    <br>
-
-                    <label for="Phone-Number">Phone Number:</label>
+                    <label class="labels" for="Phone-Number">Phone Number:</label>
                     <input type="text" name="Phone-Number" id="Phone-Number" required
                         placeholder="Enter your phone number">
 
@@ -59,26 +74,30 @@
                 </fieldset>
             </form>
         </div>
+        <div id="allStiuff">
 
-        <div>
-            <table id="cartTable">
-                <thead>
-                    <th>Image</th>
-                    <th>Course Name</th>
-                    <th>Price</th>
-                    <th></th>
-                   
-                   
-                    
-                </thead>
-                
-            </table>
-            <button id="confirmButton">Confirm</button>
+            <div id="tableStyle">
+                <h3 id="yourCart">Your Cart</h3>
+                <table id="cartTable">
+                    <thead id="headTable">
+                        <th>Image</th>
+                        <th>Course Name</th>
+                        <th>Price</th>
+                        <th></th>
 
+
+
+                    </thead>
+
+                </table>
+                <button id="confirmButton">Confirm</button>
+                <button id="checkOutButton">Checkout</button>
+            </div>
         </div>
     </main>
 
-    <footer id="footer">
+
+    <!-- <footer id="footer">
         <p class="copyText">&copy Copyright Elite-Academy 2021</p>
 
         <div class="info">
@@ -102,10 +121,13 @@
                     alt=""></a>
 
         </div>
-    </footer>
+    </footer> -->
+   
+
     <script src="JS/app.js"></script>
     <!-- <script src="JS/courses.js"></script> -->
     <script src="JS/cart.js"></script>
+    
 </body>
 
 </html>
