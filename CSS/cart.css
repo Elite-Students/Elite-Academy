@@ -2,15 +2,15 @@
 *{
     box-sizing:border-box;     
 }
-body{
+/* body{
 margin-left: 5%;
 margin-right: 5%;
 background-color: rgb(255, 255, 254);
-}
-header{    
-height: 200px;}
+} */
+/* header{    
+height: 200px;} */
 main{
-height: 1000px
+margin:5%;
 }
 #title{
 height: 14%;
@@ -40,19 +40,20 @@ width: 100%;
 background-color: rgb(5, 5, 5);
 }
 #formStyle{
-background:transparent;
-height: 30%;
-width: 50%;
+background:black;
+height: 438px;
+width: 726px;
 position: relative;
 margin-top: 9%;
 }
 #formStyle h3{
 position: absolute;
 font-size: 30px;
-right:49%;
-bottom: 105%;
+right:54%;
+bottom: 70%;
 font-family: Comic Sans MS, Comic Sans, cursive	;
 color: rgb(41, 59, 63);
+
 }
 #submit-form{
 height: 90%;
@@ -64,7 +65,7 @@ border-style: outset;
 border-bottom:50px solid rgb(69, 98, 104);
 border-radius: 11%;
 position: absolute;
-top: 7%;
+top:39%;
 left: 8%;
 } 
 #submit-form  fieldset :first-child{
@@ -164,7 +165,7 @@ color: rgb(41, 59, 63);
 #cartTable {
 width: 100%;
 position: absolute;
-top: 2%;
+bottom: 90%;
 border-collapse: collapse;
 white-space: nowrap;
 overflow-x: auto;
@@ -175,7 +176,7 @@ border-style: outset;
 border-top:50px solid rgb(69, 98, 104);
 border-radius: 11%;
 padding-bottom: 6%;
-margin-left: -5%;
+margin-left: 1%;
 }
 .rows{
 border: none;
@@ -254,8 +255,8 @@ background-color:rgb(246, 250, 252);
 }
 #confirmButton{
 position: absolute;
-top:36%;
-right: 135%;
+top:40%;
+right: 134%;
 background-color: rgb(69, 98, 104); 
 border: none;
 color: white;
@@ -263,7 +264,7 @@ padding: 15px 32px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
-font-size: 20px;
+font-size: 24px;
 margin: 4px 2px;
 cursor: pointer;
 width: 15%;
@@ -272,8 +273,8 @@ height: 5.9%;
 
 #checkOutButton{
     position: absolute;
-    top:2%;
-    right: 49%;
+    bottom: 134%;
+    right: 41%;
     background-color: rgb(69, 98, 104); 
     border: none;
     color: white;
@@ -289,8 +290,8 @@ height: 5.9%;
 }
 #image {
     position: absolute;
-    top: 2%;
-    right: 63%;
+    bottom: 132%;
+    right: 45%;
     background-color: transparent;
     margin: 4px 2px;
     width: 9%;
