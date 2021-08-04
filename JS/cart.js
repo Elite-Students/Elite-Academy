@@ -60,6 +60,7 @@ function removetheCourse(event) {
     let removed= cartItem.splice(buttonclicked,1);
     console.log(removed)
     localStorage.setItem('savedItems', JSON.stringify(cartItem));
+
 };
 
 showtheCart();

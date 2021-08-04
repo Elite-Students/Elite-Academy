@@ -42,6 +42,9 @@ function craetProfile(event) {
   saveTeProfile()
   profileJob.renderProfile()
 
+  alert(" Thank you for your interest , Our consulting team will contact you as soon as possible.")
+ 
+  
 }
 
 // ahmad part 
@@ -75,32 +78,45 @@ Profile.prototype.renderProfile = function () {
 
   let newDiv = document.createElement('div')
   divProfiles.appendChild(newDiv)
+  newDiv.setAttribute('id','profileDiv')
 
   // for (let i = 0; i < Profile.all.length; i++) {
   let imgElemnt = document.createElement('img')
 // ahmad + abedalraheem part 
   newDiv.appendChild(imgElemnt)
   imgElemnt.src = ` ${this.source}`
+  imgElemnt.setAttribute('id','imgProfile')
 
   let ulEleent = document.createElement('ul');
   newDiv.appendChild(ulEleent);
 
+  ulEleent.setAttribute('id','ulprofile')
+
   let li1Element = document.createElement('li')
   ulEleent.appendChild(li1Element)
+  li1Element.setAttribute("class","liProfil")
   li1Element.textContent = `User Name : ${this.theName} `;
   let li2Element = document.createElement('li')
   ulEleent.appendChild(li2Element)
-  li2Element.textContent = `Years of Experience : ${this.experince} `;
+  li2Element.setAttribute("class","liProfil")
+
+  li2Element.textContent = ` Skills that you have : ${this.skills} `;
   let li3Element = document.createElement('li')
   ulEleent.appendChild(li3Element)
-  li3Element.textContent = `Skills that you have : ${this.skills} `;
+  li3Element.setAttribute("class","liProfil")
+
+  li3Element.textContent = ` Years of Experience : ${this.experince} `;
 
   let li4Element = document.createElement('li')
   ulEleent.appendChild(li4Element)
+  li4Element.setAttribute("class","liProfil")
+
   li4Element.textContent = `Mobile.No : ${this.mobile} `;
 
   let li5Element = document.createElement('li')
   ulEleent.appendChild(li5Element)
+  li5Element.setAttribute("class","liProfil")
+
   li5Element.textContent = `EmailID  : ${this.email} `;
 
 }
