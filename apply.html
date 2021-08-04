@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apply for a job</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/apply.css">
+    <!-- <link rel="stylesheet" href="CSS/style.css" /> -->
+
 </head>
 
 <body>
     <header>
         <div class="header-div">
             <img class="logo"
-                src="https://cdn3.vectorstock.com/i/thumb-large/81/82/computer-courses-logo-sign-symbol-icon-vector-26128182.jpg"
+                src=""
                 alt="" />
             <h1 class="heading">Elite Academy</h1>
         </div>
@@ -30,42 +33,73 @@
         </div>
     </header>
     <main>
+
+        <div id="applyImg">
+            <h2>ARE YOU LOOKING FOR A JOB! </h2>
+
+            <img src="https://s3.amazonaws.com/tjn-blog-images/wp-content/uploads/2016/12/15204924/getting-a-new-job.jpg" alt="">
+
+            <p>Here you can find a job depending on you major and your skills <br> 
+                <br> with us you can get the opportunity to find your career
+            </p>
+
+
+
+
+
+
+
+        </div>
+
+        <section>
+            <img src="https://www.learningundefeated.org/wp-content/uploads/2019/03/joinus3.png" alt="">
+        </section>
         <form id="Apply-Form">
             <fieldset>
-                <label for="Photo">Photo Link:</label>
-                <input type="text" name="Photo" id="Photo" required placeholder="Enter the link to your photo" />
+                <p> Fill The Form!</p>
+                
+               
+                <label for="name" class="name">Full Name:</label>
+
+                <input type="text" name="name" class="name" required placeholder="Enter your full name" />
+
+                <br />
+                <br />
+                <input type="text" name="email" class="email" required placeholder="Enter your email id " />
+                <label for="email" class="email">Email ID:</label>
+
+                <br />
+                <br />
+                <input type="text" name="mobile" class="mobile" required placeholder="Enter your mobile.No " />               
+
+                <label for="mobile" class="mobile">Mobile No:</label>
+                <br />
+                <br />
+
+                <label for="Photo"  class="Photo">Photo Link:</label>
+                <input type="text" name="Photo" class="Photo" required placeholder="Enter the link to your photo" />
+
 
                 <br />
                 <br />
 
-                <label for="name">Full Name:</label>
-                <input type="text" name="name" id="name" required placeholder="Enter your full name" />
-
-
+                <label for="skills"  class="skills" >Skills that you have:</label>
+                <input type="text" name="skills" class="skills" required placeholder="Enter your skills here" />
 
                 <br />
                 <br />
-                <label for="Years of Experience">Years of Experience:</label>
-                <input type="number" name="experience" id="experience" required
+                <label for="Years of Experience" class="experience">Years of Experience:</label>
+                <input type="number" name="experience" class="experience" required
                     placeholder="Enter your years of experience here" />
 
                 <br />
                 <br />
 
-                <label for="skills">Skills:</label>
-                <input type="text" name="skills" id="skills" required placeholder="Enter your skills here" />
-
-                <br />
-                <br />
-                <label for="mobile">Mobile No:</label>
-                <input type="text" name="mobile" id="mobile" required placeholder="Enter your mobile.No " />               
-                <br />
-                <br />
-                <label for="email">Email ID:</label>
-                <input type="text" name="email" id="email" required placeholder="Enter your email id " />
-                <br />
-                <br />
-                <input class="apply-button" type="submit" value="Apply for the job" />
+               
+                
+               
+                
+                <input id="apply-button" type="submit" value="Apply for the job" />
 
             </fieldset>
         </form>
@@ -98,7 +132,7 @@
                     alt="" /></a>
         </div>
     </footer>
-
+    <script src="JS/app.js"></script>
     <script src="JS/apply.js"></script>
 </body>
 

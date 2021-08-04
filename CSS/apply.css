@@ -1,0 +1,186 @@
+/* header{
+    width: 100px;
+
+    margin-bottom: 50px;
+} */
+
+
+main {
+    margin-bottom: 20%;
+}
+h2{
+font-size:30px;
+margin-top: 2%;
+margin-left: 5%;
+margin-bottom: 2%;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
+color: #476072;
+
+
+}
+
+#applyImg img{
+    margin-left: 5%;
+    width: 80%;
+    height: 300px;
+    margin-bottom: 3%;
+}
+#applyImg p{
+    font-size: 20px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+margin-left: 5%;
+margin-bottom:2% ;
+padding: 1%;
+
+color: #476072;
+
+}
+
+section{
+    /* display: inline; */
+    margin-right: 0;
+    margin-top:5px;
+    width: 30%;
+    height: 80px;
+
+     position: relative;
+    left: 10%;
+    /* bottom: 1% */
+}
+
+section img{
+    margin-top: 35%;
+      width: 90%;
+    
+}
+
+
+#Apply-Form{
+    width: 40%;
+    height: 350px;
+
+    /* float: left; */
+    /* display: inline-block; */
+position: relative;
+left: 50%;
+top: 80%;
+background-color:#548CA8;
+text-align: center;
+
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: rgb(247, 233, 233);
+
+}
+
+#Apply-Form p{
+    margin: 2%;
+    box-sizing: border-box;
+
+}
+.name{
+    float: left;
+    margin: 0;
+    margin-top: 6%;
+    margin-left: 1%;
+    border-radius: 12px;
+    
+
+}
+
+
+.email{
+    float: right;
+    margin-top:1%;
+    margin-left: 0;
+    margin-right: 1%;
+    /* margin-bottom: 1%; */
+    border-radius: 12px;
+
+}
+
+.mobile{
+    
+        float: right;
+        margin-top: 3%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+        border-radius: 12px;
+
+}
+
+.Photo{
+    float: left;
+    margin-top: -2%;
+
+    margin-left: 1%;
+    margin-bottom: 1%;
+    border-radius: 12px;
+
+}
+
+.skills{
+    margin: 1%;
+    border-radius: 12px;
+
+}
+
+.experience{
+    margin: 1%;
+    border-radius: 12px;
+
+}
+
+
+#imgProfile{
+    width: 15%;
+    height: 5%;
+    margin-top: 1%;
+    margin-left: 8%;
+    border-radius: 50%;
+   
+}
+
+#ulprofile{
+    margin-left: 22%;
+    text-decoration: none;
+    margin-bottom: 5%;
+    /* padding: 1%; */
+    font-size: 20px;
+    color: #548CA8;
+    background-color: #EEEEEE;
+    padding: 1%;
+    font-weight: bold;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
+
+#profileDiv{
+   margin: 3%;
+   /* border: 2px slateblue solid; */
+   width: 40%;
+   /* background-color: #334257;
+   color: #EEEEEE; */
+border:none;
+border-bottom:5px dotted  #334257;
+
+}
+
+#apply-button{
+    border-radius: 12px;
+    background-color:#EEEEEE;
+    color:#334257;
+font-weight: bold;
+font-size: 20px;
+    width: 40%;
+    height: 35px;
+
+}
+
+#alert{
+    background-color: steelblue;
+}
+
+.liProfil{
+    margin:1%;
+    margin-bottom: 3%;
+}
