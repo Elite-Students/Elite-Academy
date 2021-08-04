@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apply for a job</title>
+    <title>Elite Academy</title>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/apply.css">
     <link rel="stylesheet" href="CSS/style.css" />
@@ -23,10 +23,13 @@
         <div class="nav-div">
           <nav class="pages-nav">
             <ul id="navbar">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="courses.html">Courses</a></li>
-              <li id="cart"><a href="cart.html">Cart</a></li>
-              <li><a href="apply.html">Apply for a job</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li id="cart"><a href="cart.html">Cart</a></li>
+                <li><a href="apply.html">Apply for a job</a></li>
+            <li><a href="about-us.html">About us</a></li>
+
+              
             </ul>
           </nav>
         </div>
@@ -54,45 +57,41 @@
             <img src="https://www.learningundefeated.org/wp-content/uploads/2019/03/joinus3.png" alt="">
         </section>
         <form id="Apply-Form">
+            <h3> Fill The Form!</h3>
             <fieldset>
-                <p> Fill The Form!</p>
+               
                 
                
                 <label for="name" class="name">Full Name:</label>
 
                 <input type="text" name="name" class="name" required placeholder="Enter your full name" />
 
-                <br />
-                <br />
-                <input type="text" name="email" class="email" required placeholder="Enter your email id " />
+                
                 <label for="email" class="email">Email ID:</label>
 
-                <br />
-                <br />
+                <input type="text" name="email" class="email" required placeholder="Enter your email id " />
+
+                
+                <label for="mobile" class="mobile">Mobile No:</label>
+
                 <input type="text" name="mobile" class="mobile" required placeholder="Enter your mobile.No " />               
 
-                <label for="mobile" class="mobile">Mobile No:</label>
-                <br />
-                <br />
+                
 
                 <label for="Photo"  class="Photo">Photo Link:</label>
                 <input type="text" name="Photo" class="Photo" required placeholder="Enter the link to your photo" />
 
 
-                <br />
-                <br />
+               
 
-                <label for="skills"  class="skills" >Skills that you have:</label>
+                <label for="skills"  class="skills" >your skills</label>
                 <input type="text" name="skills" class="skills" required placeholder="Enter your skills here" />
 
-                <br />
-                <br />
+              
                 <label for="Years of Experience" class="experience">Years of Experience:</label>
                 <input type="number" name="experience" class="experience" required
                     placeholder="Enter your years of experience here" />
-
-                <br />
-                <br />
+ 
 
                
                 
@@ -133,6 +132,8 @@
     </footer>
     <script src="JS/app.js"></script>
     <script src="JS/apply.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 </html>
