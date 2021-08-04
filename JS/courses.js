@@ -8,10 +8,12 @@ Course.prototype.render = function () {
     let allCourses = document.getElementById('allCourses');
     let corsesCont = document.createElement('div')
     allCourses.appendChild(corsesCont);
-
+    corsesCont.setAttribute('id','imgDiv')
+console.log(allCourses);
     let newImg = document.createElement('img')
     newImg.src = this.source
     corsesCont.appendChild(newImg);
+    newImg.setAttribute('class','imeges')
 
     let newName = document.createElement('span')
     corsesCont.appendChild(newName);
@@ -19,15 +21,20 @@ Course.prototype.render = function () {
     let titel = document.createElement('h2');
     newName.appendChild(titel)
     titel.textContent = this.name
+    newName.setAttribute('class','name')
+// console.log(newName);
 
     let thePrice = document.createElement('h3')
     newName.appendChild(thePrice)
     thePrice.textContent = this.price
+    thePrice.setAttribute('class','price')
+// console.log(thePrice);
 
     let newBtn = document.createElement('button')
     newBtn.textContent = "Add To Cart"
     corsesCont.appendChild(newBtn);
     newBtn.addEventListener('click', tab);
+    newBtn.setAttribute('class','addToCart')
 
     function tab(event) {
         event.preventDefault();

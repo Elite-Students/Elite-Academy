@@ -12,7 +12,6 @@ function loadCart() {
     cartItem = new Cart(courseCart)
     if (courseCart !== null) {
         cartItem = courseCart
-
     };
 };
 
@@ -64,6 +63,7 @@ function removetheCourse(event) {
 };
 
 showtheCart();
+
 //---------------------------------------------------------------
  // an alert fot conifirmation button 
 
