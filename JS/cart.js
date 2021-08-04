@@ -23,12 +23,17 @@ loadCart();
 function showtheCart() {
     let tBody = document.createElement('tbody')
     tableCart.appendChild(tBody);
+    tBody.setAttribute('id','bodyTable')
 
     for (let i = 0; i < cartItem.length; i++) {
         let tableRowElement = document.createElement('tr')
         tBody.appendChild(tableRowElement);
+        tableRowElement.setAttribute('class','rows')
+        let divImages=document.createElement('div')
+        tableRowElement.appendChild(divImages)
         let dataElement3 = document.createElement('img')
-        tableRowElement.appendChild(dataElement3)
+        divImages.appendChild(dataElement3)
+        divImages.setAttribute('class','imgDiv')
         dataElement3.src = `${cartItem[i].source} `
         dataElement3.width = '50'
         dataElement3.height = '30'
@@ -40,7 +45,7 @@ function showtheCart() {
         dataElement4.textContent = `${cartItem[i].price} `
         let removeButton = document.createElement('button')
         tableRowElement.appendChild(removeButton)
-        removeButton.textContent = (`Remove`)
+        removeButton.textContent = (`X`)
     };
 };
 
@@ -66,8 +71,11 @@ let confButton=document.getElementById('confirmButton');
 confButton.addEventListener('click',alertButton);
 function alertButton() {
     alert(`Thank you for registration, our consulting team will contact you` );
-    tableCart.remove();
-    localStorage.removeItem('savedItems');
+    let tBody=document.getElementById('bodyTable')
+    tBody.remove();
+    let yourCart=document.getElementById('yourCart')
+    yourCart.remove();
+    localStorage.clear();
     
 };
 
