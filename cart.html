@@ -6,45 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/cart.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
-    <header>
+    <header id="headerID">
         <div class="header-div">
-            <img class="logo"
-                src="https://cdn3.vectorstock.com/i/thumb-large/81/82/computer-courses-logo-sign-symbol-icon-vector-26128182.jpg"
-                alt="">
-            <h1 class="heading">Elite Academy</h1>
+          <img class="headerimage" src="img/LOGO.jpeg" alt="" />
+          <!-- <img class="logo" src="img/LOGO.jpeg"alt=""> -->
+          <h1 class="heading">elite</h1>
+          <h1 class="heading2">Academy</h1>
         </div>
         <div class="nav-div">
-            <nav class="pages-nav">
-                <ul id="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li id="cart" ><a href="cart.html">Cart</a></li>
-                    <li><a href="apply.html">Apply for a job</a></li>
-                </ul>
-            </nav>
+          <nav class="pages-nav">
+            <ul id="navbar">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li id="cart"><a href="cart.html">Cart</a></li>
+              <li><a href="apply.html">Apply for a job</a></li>
+            </ul>
+          </nav>
         </div>
-    </header>
+      </header>
     <main>
-        <div>
+
+        <div id="title">
+
+            <h2>The Cart-List</h2>
+            <img
+                src="https://icon-library.com/images/shopping-cart-icon-free/shopping-cart-icon-free-9.jpg">
+            <div>
+                <p>p</p>
+            </div>
+        </div>
+        <span class="fa-solid fa-cart-plus">
+        
+        </span> 
+         
+
+        <!-- <div id="allStiuff"> -->
+
+
+        <div id="formStyle">
+            <h3>Your Information</h3>
             <form id="submit-form">
                 <fieldset>
-                    <label for="Full-Name">Full Name:</label>
+                    <label class="labels" for="Full-Name">Full Name:</label>
                     <input type="text" name="Full-Name" id="Full-Name" required placeholder="Enter your full name">
 
-                    <br>
-                    <br>
 
-                    <label for="Email">Email:</label>
+                    <label class="labels" for="Email">Email:</label>
                     <input type="text" name="Email" id="Email" required placeholder="Enter your email">
 
-                    <br>
-                    <br>
-
-                    <label for="Phone-Number">Phone Number:</label>
+                    <label class="labels" for="Phone-Number">Phone Number:</label>
                     <input type="text" name="Phone-Number" id="Phone-Number" required
                         placeholder="Enter your phone number">
 
@@ -59,24 +75,29 @@
                 </fieldset>
             </form>
         </div>
+        <div id="allStiuff">
 
-        <div>
-            <table id="cartTable">
-                <thead>
-                    <th>Image</th>
-                    <th>Course Name</th>
-                    <th>Price</th>
-                    <th></th>
-                   
-                   
-                    
-                </thead>
-                
-            </table>
-            <button id="confirmButton">Confirm</button>
+            <div id="tableStyle">
+                <h3 id="yourCart">Your Cart</h3>
+                <table id="cartTable">
+                    <thead id="headTable">
+                        <th>Image</th>
+                        <th>Course Name</th>
+                        <th>Price</th>
+                        <th></th>
 
+
+
+                    </thead>
+
+                </table>
+                <button id="confirmButton">Confirm</button>
+                <button id="checkOutButton">Checkout</button>
+                <img id="image" src="https://previews.123rf.com/images/sarahdesign/sarahdesign1506/sarahdesign150604731/41444148-checkout-icon.jpg">
+            </div>
         </div>
     </main>
+
 
     <footer id="footer">
         <p class="copyText">&copy Copyright Elite-Academy 2021</p>
@@ -103,9 +124,12 @@
 
         </div>
     </footer>
+   
+
     <script src="JS/app.js"></script>
     <!-- <script src="JS/courses.js"></script> -->
     <script src="JS/cart.js"></script>
+    
 </body>
 
 </html>

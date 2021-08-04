@@ -58,6 +58,7 @@ corsesGenerat()
 //-------------------------------------------------------------------------
 // to check if there is items in the local storage :
 
+
 let savedItems = [];
 let savedItemsInLocalStorage = localStorage.getItem('savedItems');
 if (savedItemsInLocalStorage) {
@@ -81,3 +82,4 @@ function updatecounter() {
 };
 
 updatecounter()
+

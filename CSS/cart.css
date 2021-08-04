@@ -1,0 +1,304 @@
+    
+*{
+    box-sizing:border-box;     
+}
+body{
+margin-left: 5%;
+margin-right: 5%;
+background-color: rgb(255, 255, 254);
+}
+header{    
+height: 200px;}
+main{
+height: 1000px
+}
+#title{
+height: 14%;
+background-color: rgb(247 248 248);
+position: relative;
+}   
+#title h2{
+display: inline-block;
+text-align: center;
+color: rgb(51, 71, 86);
+position:absolute;
+top:26%;
+left: 39%;
+font-size: 51px;
+font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+#title img{
+position: absolute;
+top:18%;
+left: 28%;
+height: 62%;
+width: 10%;
+}
+#title div{
+position:absolute;
+width: 100%;
+background-color: rgb(5, 5, 5);
+}
+#formStyle{
+background:transparent;
+height: 30%;
+width: 50%;
+position: relative;
+margin-top: 9%;
+}
+#formStyle h3{
+position: absolute;
+font-size: 30px;
+right:49%;
+bottom: 105%;
+font-family: Comic Sans MS, Comic Sans, cursive	;
+color: rgb(41, 59, 63);
+}
+#submit-form{
+height: 90%;
+width: 70%;
+background-color: rgb(246, 250, 252);
+margin-left: 2%;
+border: outset;
+border-style: outset;
+border-bottom:50px solid rgb(69, 98, 104);
+border-radius: 11%;
+position: absolute;
+top: 7%;
+left: 8%;
+} 
+#submit-form  fieldset :first-child{
+border: none;
+border-bottom:2px solid rgb(69, 98, 104);
+position:absolute;
+top:13%;
+right:76% ;
+padding: 3%;
+}
+#submit-form :nth-child(2){
+position:absolute;
+top:25%;
+right:7% ;
+width: 60%;
+padding: 12px;
+border: none;
+border-bottom:2px solid rgb(69, 98, 104); 
+border-radius: 4px;
+resize: vertical;
+background: transparent;
+}
+#submit-form :nth-child(3){
+position:absolute;
+top:109%;
+right:82% ;
+padding: 3%;
+}
+#submit-form :nth-child(4){
+position:absolute;
+top:120%;
+right:7% ;
+width: 60%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+resize: vertical;
+border: none;
+border-bottom:2px solid rgb(69, 98, 104);
+background: transparent;
+}
+#submit-form :nth-child(5){
+position:absolute;
+top:211%;
+right:71% ;
+padding: 3%;
+}
+#submit-form :nth-child(6){
+position:absolute;
+top:221%;
+right:3% ;
+width: 60%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+resize: vertical;
+border: none;
+border-bottom:2px solid rgb(69, 98, 104);
+background: transparent;
+}
+ label {
+padding: 12px 12px 12px 0;
+display: inline-block;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 16px;
+border: none;
+border-bottom:2px solid rgb(69, 98, 104);   
+} 
+ #submit-form  fieldset{
+position: relative;
+}  
+ #tableStyle{
+height: 100%;
+width: 53%;
+position:absolute;
+top: 45%;
+right: 1%;
+margin-top: 9%;
+}
+#allStuff{
+position: relative;
+height: 100%;
+} 
+.imgDiv img{
+position: absolute;
+bottom: 24%;
+left: 22%;
+border-radius: 50%;}
+#tableStyle h3{
+position: absolute;
+font-size: 30px;
+left:0%;
+bottom: 105%;
+font-family: Comic Sans MS, Comic Sans, cursive	;
+color: rgb(41, 59, 63);
+}
+#cartTable {
+width: 100%;
+position: absolute;
+top: 2%;
+border-collapse: collapse;
+white-space: nowrap;
+overflow-x: auto;
+overflow-y: hidden;
+background-color: rgb(246, 250, 252);
+border: outset;
+border-style: outset;
+border-top:50px solid rgb(69, 98, 104);
+border-radius: 11%;
+padding-bottom: 6%;
+margin-left: -5%;
+}
+.rows{
+border: none;
+}
+table, td, th {
+display: inline-block;
+}
+#cartTable #headTable{
+position: relative;
+top: 12%;
+font-size:30px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 20px;
+height: 10%;
+font-family: 'Apple Chancery', cursive	;
+}
+#cartTable #headTable :first-child{
+width: 100%;
+margin: 7%;
+}
+#cartTable #headTable :nth-child(2){
+width: 100%;
+}
+#cartTable #headTable :nth-child(3){
+width: 70%;
+}
+#cartTable #headTable :nth-child(4){
+width: 43%;
+}
+#cartTable #bodyTable .rows{
+position: relative;
+top: 12%;
+font-size:25px;
+font-family: 'Palatino', 'URW Palladio L', serif	;
+font-size: 20px;
+height: 100%;
+
+}
+#cartTable #bodyTable .rows :first-child{
+width: 125px;
+height: 62px;
+padding: 2%;
+    
+}
+#cartTable #bodyTable .rows :nth-child(2){
+width: 101%;
+padding: 15%;
+margin-left: 13%;
+position: absolute;
+height: 129%;
+bottom: 33%;
+left: 98%;
+text-align: center;
+border-bottom:2px solid rgb(69, 98, 104);
+}
+#cartTable #bodyTable .rows :nth-child(3){
+width: 70%;
+height: 129%;
+bottom: 33%;
+padding: 15%;
+position: absolute;
+left:215%;
+margin-left: 13%;
+border-bottom:2px solid rgb(69, 98, 104);
+}
+#cartTable #bodyTable .rows :nth-child(4){
+width: 45%;
+padding: 2%;
+height: 51%;
+bottom: 11%;
+position: absolute;
+left:289%;
+margin-left: 13%;
+border: none;
+background-color:rgb(246, 250, 252);
+}
+#confirmButton{
+position: absolute;
+top:36%;
+right: 135%;
+background-color: rgb(69, 98, 104); 
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin: 4px 2px;
+cursor: pointer;
+width: 15%;
+height: 5.9%;  
+}
+
+#checkOutButton{
+    position: absolute;
+    top:2%;
+    right: 49%;
+    background-color: rgb(69, 98, 104); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 15%;
+    height: 5.9%;
+}
+#image {
+    position: absolute;
+    top: 2%;
+    right: 63%;
+    background-color: transparent;
+    margin: 4px 2px;
+    width: 9%;
+    height: 5.9%;
+border-radius: 50%;}
+#cartTable #bodyTable {
+  position: relative;
+}
+
+
+  
