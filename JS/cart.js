@@ -71,14 +71,11 @@ let confButton=document.getElementById('confirmButton');
 confButton.addEventListener('click',alertButton);
 function alertButton() {
     alert(`Thank you for registration, our consulting team will contact you` );
-    tableCart.remove();
+    let tBody=document.getElementById('bodyTable')
+    tBody.remove();
     let yourCart=document.getElementById('yourCart')
     yourCart.remove();
-    let check=document.getElementsById('checkOutButton')
-    check.disabled=true
-    // check.disabled=false
-
-    localStorage.removeItem('savedItems');
+    localStorage.clear();
     
 };
 
