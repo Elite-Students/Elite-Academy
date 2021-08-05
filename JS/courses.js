@@ -44,7 +44,15 @@ console.log(allCourses);
             let storingitems = JSON.stringify(savedItems)
             localStorage.setItem('savedItems', storingitems)
             updatecounter();
+            
         }
+
+        swal({
+            title: "Check Your cart !",
+            text: `The ${titel.textContent} has been added succssefuly!`,
+            icon: "success",
+            button: "Aww yiss!",
+          });
     };
 
     function checkIfCourseIsAdded(courseName) {
@@ -60,3 +68,6 @@ console.log(allCourses);
 for (let i = 0; i < Course.allCourses.length; i++) {
     Course.allCourses[i].render();
 };
+
+
+swal();
