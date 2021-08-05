@@ -42,16 +42,16 @@ Cart.prototype.removeCourse = function (item) {
 //---------------------------------------------------------
 
 function corsesGenerat() {
-    new Course('PMP', 'img/pmp-cert.png', '150')
-    new Course('six segma', 'img/six-segma.jpg', '70')
-    new Course('ACP', 'img/pmi-acp.png', '13')
-    new Course('ITIL', 'img/itil.jpeg', '13')
-    new Course('COBIT', 'img/ISACA_COBIT.png', '13')
-    new Course('CEH', 'img/ceh.jpg', '13')
-    new Course('CCNA', 'img/ccna.jpg', '13')
-    new Course('Azure', 'img/azure.png', '13')
-    new Course('AWS', 'img/aws.png', '13')
-    new Course('CISM', 'img/cism.png', '15')
+    new Course('PMP', 'img/pmp-cert.png', '350$')
+    new Course('six segma', 'img/six-segma.jpg', '70$')
+    new Course('ACP', 'img/pmi-acp.png', '150$')
+    new Course('ITIL', 'img/itil.jpeg', '70$')
+    new Course('COBIT', 'img/ISACA_COBIT.png', '45$')
+    new Course('CEH', 'img/ceh.jpg', '1200$')
+    new Course('CCNA', 'img/ccna.jpg', '650$')
+    new Course('Azure', 'img/azure.png', '80$')
+    new Course('AWS', 'img/aws.png', '120$')
+    new Course('CISM', 'img/cism.png', '1700$')
 };
 
 corsesGenerat()
