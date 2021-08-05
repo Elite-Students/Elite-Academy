@@ -57,9 +57,27 @@ function removetheCourse(event) {
 
     let buttonclicked = event.target
     buttonclicked.parentElement.remove();
+    swal({
+        title: "Are you sure?",
+        text: "Once deleted, you will not be able to recover this course!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+          swal("Poof! Your  Chosed course file has been deleted!", {
+            icon: "success",
+          });
+        } else {
+          swal("Your course file is safe!");
+        }
+      });
+    
     let removed= cartItem.splice(buttonclicked,1);
     console.log(removed)
     localStorage.setItem('savedItems', JSON.stringify(cartItem));
+
 
 };
 
@@ -71,12 +89,60 @@ showtheCart();
 let confButton=document.getElementById('confirmButton');
 confButton.addEventListener('click',alertButton);
 function alertButton() {
-    alert(`Thank you for registration, our consulting team will contact you` );
+
     let tBody=document.getElementById('bodyTable')
     tBody.remove();
     let yourCart=document.getElementById('yourCart')
     yourCart.remove();
     localStorage.clear();
+
+
+    // swal({
+    //     title: 'Input email address',
+    //     input: 'email',
+    //     inputPlaceholder: 'Enter your email address'
+    //   }).then(function (email) {
+    //     swal({
+    //       type: 'success',
+    //       html: 'Entered email: ' + email
+    //     })
+    //   })
+
+    swal({
+        title: 'Submit email to get information about the course',
+        input: 'email',
+        showCancelButton: true,
+        confirmButtonText: 'Submit',
+        showLoaderOnConfirm: true,
+        preConfirm: function (email) {
+          return new Promise(function (resolve, reject) {
+            setTimeout(function() {
+              if (email === 'taken@example.com') {
+                reject('This email is already taken.')
+              } else {
+                resolve()
+              }
+            }, 2000)
+          })
+        },
+        allowOutsideClick: false
+      }).then(function (email) {
+        swal({
+          type: 'success',
+          title: 'confirm request finished!',
+          html: 'Submitted email: ' + email
+        })
+      })
+
+     
+   
     
 };
 
+
+
+
+
+  swal();
+  swal();
+  swal();

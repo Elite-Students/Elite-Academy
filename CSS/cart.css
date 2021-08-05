@@ -9,13 +9,15 @@ background-color: rgb(255, 255, 254);
 } */
 /* header{    
 height: 200px;} */
-main{
+/* main{
 margin:5%;
-}
+} */
 #title{
 height: 14%;
-background-color: rgb(247 248 248);
+background-color: #DDDDDD;
 position: relative;
+margin-top: 5%;
+height: 200px;
 }   
 #title h2{
 display: inline-block;
@@ -35,22 +37,35 @@ height: 62%;
 width: 10%;
 }
 #title div{
-position:absolute;
-width: 100%;
-background-color: rgb(5, 5, 5);
+    position:absolute;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    top:2%;
 }
 #formStyle{
-background:black;
+    background:transparent;
+    height: 438px;
+    width: 726px;
+    position: relative;
+    margin-top: 11%;
+    }
+#allStiuff{
+    float: right;
+position: absolute;
+background:transparent;
 height: 438px;
 width: 726px;
-position: relative;
-margin-top: 9%;
-}
+margin-top: 11%;
+top: 49%;
+right: 2%;
+    
+    } 
+
 #formStyle h3{
 position: absolute;
 font-size: 30px;
-right:54%;
-bottom: 70%;
+right:55%;
+bottom: 101%;
 font-family: Comic Sans MS, Comic Sans, cursive	;
 color: rgb(41, 59, 63);
 
@@ -58,28 +73,28 @@ color: rgb(41, 59, 63);
 #submit-form{
 height: 90%;
 width: 70%;
-background-color: rgb(246, 250, 252);
+background-color: #D3E0EA;
 margin-left: 2%;
 border: outset;
 border-style: outset;
-border-bottom:50px solid rgb(69, 98, 104);
+border-bottom:68px solid rgb(69, 98, 104);
 border-radius: 11%;
 position: absolute;
-top:39%;
+top:3%;
 left: 8%;
 } 
 #submit-form  fieldset :first-child{
 border: none;
 border-bottom:2px solid rgb(69, 98, 104);
 position:absolute;
-top:13%;
-right:76% ;
+top:88%;
+right:69% ;
 padding: 3%;
 }
 #submit-form :nth-child(2){
 position:absolute;
-top:25%;
-right:7% ;
+top:100%;
+right:3% ;
 width: 60%;
 padding: 12px;
 border: none;
@@ -90,14 +105,14 @@ background: transparent;
 }
 #submit-form :nth-child(3){
 position:absolute;
-top:109%;
-right:82% ;
+top:187%;
+right:77% ;
 padding: 3%;
 }
 #submit-form :nth-child(4){
 position:absolute;
-top:120%;
-right:7% ;
+top:205%;
+right:3% ;
 width: 60%;
 padding: 12px;
 border: 1px solid #ccc;
@@ -109,13 +124,13 @@ background: transparent;
 }
 #submit-form :nth-child(5){
 position:absolute;
-top:211%;
-right:71% ;
+top:289%;
+right:64% ;
 padding: 3%;
 }
 #submit-form :nth-child(6){
 position:absolute;
-top:221%;
+top:300%;
 right:3% ;
 width: 60%;
 padding: 12px;
@@ -130,56 +145,58 @@ background: transparent;
 padding: 12px 12px 12px 0;
 display: inline-block;
 font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 16px;
+font-size: 18px;
 border: none;
-border-bottom:2px solid rgb(69, 98, 104);   
+border-bottom:2px solid rgb(69, 98, 104);  
+color: rgb(30, 30, 48); 
 } 
  #submit-form  fieldset{
 position: relative;
 }  
- #tableStyle{
+ /* #tableStyle{
 height: 100%;
 width: 53%;
 position:absolute;
 top: 45%;
 right: 1%;
 margin-top: 9%;
-}
-#allStuff{
-position: relative;
-height: 100%;
-} 
+/* background-color: black; */
 .imgDiv img{
 position: absolute;
-bottom: 24%;
-left: 22%;
+bottom: 5%;
+left: 37%;
 border-radius: 50%;}
-#tableStyle h3{
+#allStiuff h3{
 position: absolute;
 font-size: 30px;
-left:0%;
-bottom: 105%;
+left: 6%;
+bottom: 102%;
 font-family: Comic Sans MS, Comic Sans, cursive	;
 color: rgb(41, 59, 63);
 }
+
+/* rgb(246, 250, 252) */
 #cartTable {
-width: 100%;
-position: absolute;
-bottom: 90%;
-border-collapse: collapse;
-white-space: nowrap;
-overflow-x: auto;
-overflow-y: hidden;
-background-color: rgb(246, 250, 252);
-border: outset;
-border-style: outset;
-border-top:50px solid rgb(69, 98, 104);
-border-radius: 11%;
-padding-bottom: 6%;
-margin-left: 1%;
+    width: 88%;
+    height: 96%;
+    position: absolute;
+    top: 2%;
+    border-collapse: collapse;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: #D3E0EA;
+    border: outset;
+    border-style: outset;
+    border-top: 50px solid rgb(69, 98, 104);
+    border-radius: 11%;
+    padding-bottom: 6%;
+    margin-left: 1%;
+    overflow: scroll;
 }
 .rows{
 border: none;
+color: rgb(49, 49, 82);
 }
 table, td, th {
 display: inline-block;
@@ -194,11 +211,13 @@ height: 10%;
 font-family: 'Apple Chancery', cursive	;
 }
 #cartTable #headTable :first-child{
-width: 100%;
-margin: 7%;
+width: 89%;
+margin: 4%;
+margin-top:9%
 }
 #cartTable #headTable :nth-child(2){
-width: 100%;
+    width: 68%;
+    margin-bottom: 7%;
 }
 #cartTable #headTable :nth-child(3){
 width: 70%;
@@ -216,47 +235,47 @@ height: 100%;
 
 }
 #cartTable #bodyTable .rows :first-child{
-width: 125px;
-height: 62px;
-padding: 2%;
+width: 68px;
+height: 55px;
+padding-bottom: 1%;
     
 }
 #cartTable #bodyTable .rows :nth-child(2){
-width: 101%;
-padding: 15%;
-margin-left: 13%;
-position: absolute;
-height: 129%;
-bottom: 33%;
-left: 98%;
-text-align: center;
-border-bottom:2px solid rgb(69, 98, 104);
+    width: 63%;
+    padding: 15%;
+    margin-left: 0%;
+    position: absolute;
+    height: 129%;
+    bottom: 31%;
+    left: 98%;
+    text-align: center;
+    border-bottom: 2px solid rgb(69, 98, 104);
 }
 #cartTable #bodyTable .rows :nth-child(3){
-width: 70%;
-height: 129%;
-bottom: 33%;
-padding: 15%;
-position: absolute;
-left:215%;
-margin-left: 13%;
-border-bottom:2px solid rgb(69, 98, 104);
+    width: 42%;
+    height: 123%;
+    bottom: 30%;
+    padding: 15%;
+    position: absolute;
+    left: 164%;
+    margin-left: 13%;
+    border-bottom: 2px solid rgb(69, 98, 104);
 }
 #cartTable #bodyTable .rows :nth-child(4){
-width: 45%;
-padding: 2%;
-height: 51%;
-bottom: 11%;
-position: absolute;
-left:289%;
-margin-left: 13%;
-border: none;
-background-color:rgb(246, 250, 252);
+    width: 45%;
+    padding: 2%;
+    height: 51%;
+    bottom: 9%;
+    position: absolute;
+    left: 209%;
+    margin-left: 13%;
+    border: none;
+    background-color: transparent;
 }
 #confirmButton{
 position: absolute;
-top:40%;
-right: 134%;
+top: 77%;
+right: 158%;
 background-color: rgb(69, 98, 104); 
 border: none;
 color: white;
@@ -273,9 +292,9 @@ height: 5.9%;
 
 #checkOutButton{
     position: absolute;
-    bottom: 134%;
-    right: 41%;
-    background-color: rgb(69, 98, 104); 
+    bottom: 90%;
+    right: 48%;
+    background-color: rgb(69, 98, 104);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -290,13 +309,13 @@ height: 5.9%;
 }
 #image {
     position: absolute;
-    bottom: 132%;
-    right: 45%;
+    bottom: 86%;
+    right: 60%;
     background-color: transparent;
     margin: 4px 2px;
     width: 9%;
-    height: 5.9%;
-border-radius: 50%;}
+    height: 11%;
+    border-radius: 50%;}
 #cartTable #bodyTable {
   position: relative;
 }
